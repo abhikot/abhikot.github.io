@@ -825,14 +825,14 @@ ol {
 }
 
 .parallax .main-right-area{
-	background-image: "img/whiteback.jpg";
+	background-image: url("img/tree.jpeg");
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+/* @media (max-width:500px){.nav .nav-pills .mb-3{ display: inline-block}} */
 /*---------------------
 	Home 3 Style
 -----------------------*/
