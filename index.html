@@ -616,19 +616,20 @@
 
 	<script> 
 		var slideIndex = 0;
-			carousel();
+			caroused();
 
-			function carousel() {
-			var i;
-			var x = document.getElementsByClassName("mySlides");
-			for (i = 0; i < x.length; i++) {
-				x[i].style.display = "none"; 
+			function caroused() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1} 
+				x[slideIndex-1].style.display = "block"; 
+				setTimeout(caroused, 7000); // Change image every 2 seconds
 			}
-			slideIndex++;
-			if (slideIndex > x.length) {slideIndex = 1} 
-			x[slideIndex-1].style.display = "block"; 
-			setTimeout(carousel, 7000); // Change image every 2 seconds
-			}
+
 	</script>
 
 	<script> 
@@ -646,7 +647,7 @@
 				x[slideIndex-1].style.display = "block"; 
 				setTimeout(carousel, 7000); // Change image every 2 seconds
 				}
-		</script>
+	</script>
 <!-- 
 	<script> 
 			var i = 0;
