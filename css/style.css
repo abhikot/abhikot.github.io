@@ -71,7 +71,7 @@ ol {
 	Helper CSS
 -----------------------*/
 .spad {
-	padding-top: 60px;
+	padding-top: 40px;
 	padding-bottom: -10px;
 }
 
@@ -321,7 +321,7 @@ ol {
 	font-size: 24px;
 	position: relative;
 	padding-right: 150px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
     width: 330px;
 }
 
@@ -847,7 +847,7 @@ ol {
 } */
 
 .main-right-area{
-	background-image: url("img/tree.jpeg");
+	background:  white;
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -916,7 +916,7 @@ ol {
 .home-three-style .hero-text h2,
 .home-four-style .hero-text h2 {
 	font-size: 72px;
-	margin-bottom: 40px;
+	margin-bottom: 0px;
 }
 
 .home-three-style .review-slider,
@@ -1520,4 +1520,46 @@ ol {
 	.home-four-style .main-left-area {
 		padding-top: 250px;
 	}
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+/* html{
+  min-height: 100%;
+  overflow: hidden;
+} */
+/* body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(25,25,25);  
+} */
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 00ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 14em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }

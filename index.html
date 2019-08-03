@@ -97,7 +97,7 @@
                             include music (both listening and performing),
                             badminton, the outdoors, and video games!
                             </p> -->
-							<div class="hero-info pt-5">
+							<div class="hero-info pt-5" style="margin-top: -38px;">
 								<h2><center> General Info </center></h2>
 								<ul>
 									<!-- <li><span>DOB</span>October 30, 1999</li> -->
@@ -110,7 +110,7 @@
 
 						<section class="language-section spad">
 							<div class="">
-								<h1><center> Programming Languages </center></h1>
+								<h1><center> Languages </center></h1>
 								<br>
 							</div>
 							<ul class="language-progress">
@@ -120,7 +120,7 @@
 								<li>SQL <div class="lan-prog" data-lanprogesss="4"></div></li>
 								<li>Java <div class="lan-prog" data-lanprogesss="4"></div></li>
 								<li>HTML/CSS <div class="lan-prog" data-lanprogesss="3"></div></li>
-								<li>Javascript <div class="lan-prog" data-lanprogesss="2"></div></li>
+								<li>JavaScript <div class="lan-prog" data-lanprogesss="2"></div></li>
 							</ul>
 						</section>
 						<!-- <section class="language-section spad">
@@ -147,7 +147,8 @@
 						
 							
 							<div class="icon-box-area spad">
-								<h1><center> Hobbies </center></h1> <br>
+								<h1><center> Hobbies </center></h1> 
+								<br>
 								<div class="icon-box">
 									<center><i class="flaticon-007-sports"></i>
 									<p>Sports </p>
@@ -161,7 +162,39 @@
 									<p>Travel</p>
 								</div>
 							</div>
+
+							<!-- <div class="icon-box-area spad" style="margin-top: 0px;">
+									<h1><center> Recent Travel </center></h1> <br>
+									<img class="myTravels" src="img/rome.jpg" alt = "">
+									<img class="myTravels" src="img/cancun.jpg" alt = "">
+									<img class="myTravels" src="img/alps.jpg" alt = "">
+							</div> -->
+							<br> <br>
+							<center> <button type="button" class="site-btn" data-toggle="modal" data-target="#exampleModalCenter"> Check Out My Travels + </button></center>
+							<br> 
+							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLongTitle" style="font-size: 1.2rem"> Recent Travels </h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+										</div>
+										<div class="modal-body">
+												<div class="icon-box-area spad" style="margin-top: -40px;">
+														<!-- <h1><center> Recent Travel </center></h1> <br>  -->
+														<img class="myTravels" src="img/rome.jpg" alt = "">
+														<img class="myTravels" src="img/cancun.jpg" alt = "">
+														<img class="myTravels" src="img/alps.jpg" alt = "">
+												</div>
+										</div> 
+									</div>
+									</div>
+							</div>
+							
 					</div>
+					<br> 
 				</div>
 
 				<div class="col-xl-7 col-lg-7">
@@ -174,8 +207,12 @@
 									<h1> Hello World, </h1>
 								</div> -->
 								<br>
+								
+								<!-- <p class="line-1 anim-typewriter"><b>Abhi</b> </p> -->
+
+								
 								<h2> <i id="demo"> Hello World,</i></h2>
-								<p>I’m <b> Abhi </b>, a third-year student at the
+								<p>I’m <b> Abhi</b>, a third-year student at the
 									<a href="https://umich.edu/" style="color: #f2c649"> University of Michigan </a>
 								studying Computer Science and Data Science. </p>
 									<br>
@@ -288,7 +325,7 @@
 								
 
 							</div>
-							
+						
 							<!-- <div class="hero-text1">
 								<h2><center> Education </center></h2>
 							</div> -->
@@ -396,7 +433,7 @@
 										  <div class="tab-content" id="pills-tabContent">
 											<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"><li>
 													<h2><a href="https://www.kalibrr.com/">
-														<img role="tab" data-toggle="pill" src="kalibrr.png" style= "height: 50px; width: 146px" alt="">
+														<img role="tab" data-toggle="pill" src="kalibrr.png" style= "height: 67px; width: 197px" alt="">
 													</a></h2>
 													<br>
 													<h2 style = "font-size:1.8rem">Machine Learning Intern
@@ -595,6 +632,23 @@
 	</script>
 
 	<script> 
+			var slideIndex = 0;
+				carousel();
+
+				function carousel() {
+				var i;
+				var x = document.getElementsByClassName("myTravels");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none"; 
+				}
+				slideIndex++;
+				if (slideIndex > x.length) {slideIndex = 1} 
+				x[slideIndex-1].style.display = "block"; 
+				setTimeout(carousel, 7000); // Change image every 2 seconds
+				}
+		</script>
+<!-- 
+	<script> 
 			var i = 0;
 		var txt = 'Lorem ipsum typing effect!'; /* The text */
 		var speed = 50; /* The speed/duration of the effect in milliseconds */
@@ -606,7 +660,7 @@
 			setTimeout(typeWriter, speed);
 		}
 		}
-	</script>
+	</script> -->
 </body>
 
 
