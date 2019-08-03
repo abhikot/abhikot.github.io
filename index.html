@@ -70,7 +70,9 @@
 					<div class="main-left-area h-100">
 						<section class="intro-section">
 							<figure class="hero-image">
-								<img src="img/hero.jpg" alt="">
+								<img class="mySlides" src="img/hero.jpg" alt = "">
+								<img class="mySlides" src="img/hero1.jpg" alt = "">
+								<!-- <img src="img/hero1.jpg" alt=""> -->
 							</figure>
 							<div class="social-links">
 									<a href="https://www.facebook.com/swagbhi"><i class="fa fa-facebook"></i></a>
@@ -574,5 +576,25 @@
 	<script src="js/magnific-popup.min.js"></script>
 	<script src="js/circle-progress.min.js"></script>
 	<script src="js/main.js"></script>
+
+	<script> 
+		var slideIndex = 0;
+			carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none"; 
+			}
+			slideIndex++;
+			if (slideIndex > x.length) {slideIndex = 1} 
+			x[slideIndex-1].style.display = "block"; 
+			setTimeout(carousel, 7000); // Change image every 2 seconds
+			}
+	</script>
 </body>
+
+
 </html>
+

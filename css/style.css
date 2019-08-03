@@ -862,8 +862,8 @@ ol {
 .home-four-style .main-left-area {
 	background: #f2f7f8;
 	padding-top: -10px;
-	padding-right: 80px;
-	padding-left: 80px;
+	/* padding-right: 80px; */
+	/* padding-left: 80px; */
 }
 
 .home-three-style .main-left-area .section-title h2,
@@ -874,6 +874,8 @@ ol {
 
 .home-three-style .main-right-area,
 .home-four-style .main-right-area {
+	/* background-image: url('../img/tree.jpeg'); */
+	/* background-image: linear-gradient(to top, rgba(255, 0, 0, 0), rgba(255, 0, 0, 0.16)); */
 	padding-top: 40px;
 	padding-left: 110px;
 	padding-bottom: 0px;
@@ -881,6 +883,7 @@ ol {
 
 .home-three-style .resume-list li,
 .home-four-style .resume-list li {
+	/* background: #f2f7f8; */
 	padding-left: 0;
 }
 
